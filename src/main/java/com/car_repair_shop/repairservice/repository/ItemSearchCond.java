@@ -1,4 +1,4 @@
-package com.car_repair_shop.itemservice.repository;
+package com.car_repair_shop.repairservice.repository;
 
 import lombok.Data;
 

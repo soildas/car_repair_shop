@@ -1,9 +1,9 @@
-package com.car_repair_shop.itemservice.repository.mybatis;
+package com.car_repair_shop.repairservice.repository.mybatis;
 
-import com.car_repair_shop.itemservice.domain.Item;
-import com.car_repair_shop.itemservice.repository.ItemRepository;
-import com.car_repair_shop.itemservice.repository.ItemSearchCond;
-import com.car_repair_shop.itemservice.repository.ItemUpdateDto;
+import com.car_repair_shop.repairservice.domain.Item;
+import com.car_repair_shop.repairservice.repository.ItemRepository;
+import com.car_repair_shop.repairservice.repository.ItemSearchCond;
+import com.car_repair_shop.repairservice.repository.ItemUpdateDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;

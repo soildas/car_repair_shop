@@ -1,4 +1,4 @@
-package com.car_repair_shop.itemservice.domain;
+package com.car_repair_shop.repairservice.domain;
 
 import lombok.Data;
 

@@ -1,10 +1,10 @@
-package com.car_repair_shop.itemservice.config;
+package com.car_repair_shop.repairservice.config;
 
-import com.car_repair_shop.itemservice.repository.ItemRepository;
-import com.car_repair_shop.itemservice.repository.mybatis.ItemMapper;
-import com.car_repair_shop.itemservice.repository.mybatis.MybatisItemRepository;
-import com.car_repair_shop.itemservice.service.ItemService;
-import com.car_repair_shop.itemservice.service.ItemServiceV1;
+import com.car_repair_shop.repairservice.repository.ItemRepository;
+import com.car_repair_shop.repairservice.repository.mybatis.ItemMapper;
+import com.car_repair_shop.repairservice.repository.mybatis.MybatisItemRepository;
+import com.car_repair_shop.repairservice.service.ItemService;
+import com.car_repair_shop.repairservice.service.ItemServiceV1;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

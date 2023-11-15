@@ -1,6 +1,6 @@
-package com.car_repair_shop.itemservice.repository;
+package com.car_repair_shop.repairservice.repository;
 
-import com.car_repair_shop.itemservice.domain.Item;
+import com.car_repair_shop.repairservice.domain.Item;
 
 import java.util.List;
 import java.util.Optional;

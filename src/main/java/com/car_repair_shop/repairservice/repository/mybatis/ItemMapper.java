@@ -1,8 +1,8 @@
-package com.car_repair_shop.itemservice.repository.mybatis;
+package com.car_repair_shop.repairservice.repository.mybatis;
 
-import com.car_repair_shop.itemservice.domain.Item;
-import com.car_repair_shop.itemservice.repository.ItemSearchCond;
-import com.car_repair_shop.itemservice.repository.ItemUpdateDto;
+import com.car_repair_shop.repairservice.domain.Item;
+import com.car_repair_shop.repairservice.repository.ItemSearchCond;
+import com.car_repair_shop.repairservice.repository.ItemUpdateDto;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.data.repository.query.Param;
 

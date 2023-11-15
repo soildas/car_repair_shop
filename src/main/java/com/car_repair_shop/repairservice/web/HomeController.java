@@ -1,4 +1,4 @@
-package com.car_repair_shop.itemservice.web;
+package com.car_repair_shop.repairservice.web;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;

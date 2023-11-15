@@ -1,9 +1,9 @@
-package com.car_repair_shop.itemservice.service;
+package com.car_repair_shop.repairservice.service;
 
 
-import com.car_repair_shop.itemservice.domain.Item;
-import com.car_repair_shop.itemservice.repository.ItemSearchCond;
-import com.car_repair_shop.itemservice.repository.ItemUpdateDto;
+import com.car_repair_shop.repairservice.domain.Item;
+import com.car_repair_shop.repairservice.repository.ItemSearchCond;
+import com.car_repair_shop.repairservice.repository.ItemUpdateDto;
 
 import java.util.List;
 import java.util.Optional;
