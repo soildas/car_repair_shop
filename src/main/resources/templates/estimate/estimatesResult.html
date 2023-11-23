@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link th:href="@{/css/bootstrap.min.css}"
+          href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" style="max-width: 600px">
+    <div class="py-5 text-center">
+        <h2>수리 품목</h2>
+    </div>
+
+    <hr class="my-4">
+    <div>
+        <form action="estimatesResult.html" th:action="estimatesForm" method="post">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>수리 여부</th>
+                <th>ID</th>
+                <th>수리 품목</th>
+                <th>가격</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="repair : ${repairs}">
+                <td>
+                    <input type="checkbox" th:checked="true" name="checkedRepairs" class="form-check-input" th:value="${repair.id}" readonly>
+                </td>
+                <td th:text="${repair.id}"></td>
+                <td th:text="${repair.repairName}"></td>
+                <td th:text="${repair.price}"></td>
+            </tr>
+
+            </tbody>
+        </table>
+            <p class="text-info" th:text="${sum}"></p>
+        <button type="submit" class="w-100 btn btn-secondary btn-lg">견적서 목록 보기</button>
+        </form>
+    </div>
+
+
+</div> <!-- /container -->
+
+
+
+</body>
+</html>
