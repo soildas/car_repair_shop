@@ -6,6 +6,7 @@ import com.car_repair_shop.repairservice.repository.ItemSearchCond;
 import com.car_repair_shop.repairservice.repository.ItemUpdateDto;
 import com.car_repair_shop.repairservice.service.ItemService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/item/items")
 @RequiredArgsConstructor
+@Slf4j
 public class ItemController {
 
     private final ItemService itemService;

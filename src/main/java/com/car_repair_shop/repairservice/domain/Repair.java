@@ -5,12 +5,17 @@ import lombok.Data;
 @Data
 public class Repair {
 
-    private int id;
-    private String repairName;
-    private int price;
+    private Long id;
 
-    public Repair(String repairName, int price) {
+    private String repairName;
+    private Integer price;
+
+    public Repair() {
+    }
+
+    public Repair(String repairName, Integer price) {
         this.repairName = repairName;
         this.price = price;
     }
 }
+

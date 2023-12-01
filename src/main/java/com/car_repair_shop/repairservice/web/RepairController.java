@@ -3,6 +3,7 @@ package com.car_repair_shop.repairservice.web;
 import com.car_repair_shop.repairservice.domain.Repair;
 import com.car_repair_shop.repairservice.service.RepairService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/repair/repairs")
 @RequiredArgsConstructor
+@Slf4j
 public class RepairController {
     private final RepairService repairService;
 

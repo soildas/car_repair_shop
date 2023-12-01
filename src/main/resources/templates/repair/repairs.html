@@ -31,14 +31,16 @@
                 <th>ID</th>
                 <th>수리 품목</th>
                 <th>가격</th>
+                <th>삭제</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="repair : ${repairs}">
-                <td><a href="repair.html" th:href="@{/repair/repairs/{repairId}(repairId=${repair.id})}" th:text="${repair.id}"></a>
+                <td><a href="repair.html" th:href="@{|/repair/repairs/${repair.id}|}" th:text="${repair.id}"></a>
                 </td>
                 <td><a href="repair.html" th:href="@{|/repair/repairs/${repair.id}|}" th:text="${repair.repairName}"></a></td>
                 <td th:text="${repair.price}"></td>
+                <td><a href="repair.html" th:href="@{|/repair/repairs/${repair.id}/delete|}" >삭제</a></td>
             </tr>
             </tbody>
         </table>
