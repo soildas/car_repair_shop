@@ -37,7 +37,7 @@
     </div>
     <div>
         <label for="price">가격</label>
-        <input type="text" id="price" name="price" class="form-control" value="10000" th:value="${repair.price}" readonly>
+        <input type="text" id="price" name="price" class="form-control" value="10000" th:value="${#numbers.formatInteger(repair.price, 0, 'COMMA')}" readonly>
     </div>
     <hr class="my-4">
 

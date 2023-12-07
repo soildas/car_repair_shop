@@ -31,7 +31,7 @@
                 </td>
                 <td th:text="${repair.id}"></td>
                 <td th:text="${repair.repairName}"></td>
-                <td th:text="${repair.price}"></td>
+                <td th:text="${#numbers.formatInteger(repair.price, 0, 'COMMA')}"></td>
             </tr>
             </tbody>
         </table>

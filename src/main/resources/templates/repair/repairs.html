@@ -39,7 +39,7 @@
                 <td><a href="repair.html" th:href="@{|/repair/repairs/${repair.id}|}" th:text="${repair.id}"></a>
                 </td>
                 <td><a href="repair.html" th:href="@{|/repair/repairs/${repair.id}|}" th:text="${repair.repairName}"></a></td>
-                <td th:text="${repair.price}"></td>
+                <td th:text="${#numbers.formatInteger(repair.price, 0, 'COMMA')}"></td>
                 <td><a href="repair.html" th:href="@{|/repair/repairs/${repair.id}/delete|}" >삭제</a></td>
             </tr>
             </tbody>
